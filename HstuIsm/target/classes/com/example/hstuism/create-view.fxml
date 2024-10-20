@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hstuism.HstuAllianceController">
+   <children>
+      <AnchorPane fx:id="mySubmitted" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #0000;">
+         <children>
+            <ChoiceBox fx:id="myHallNameInput" layoutX="283.0" layoutY="353.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="myName" layoutX="200.0" layoutY="160.0" prefHeight="16.0" prefWidth="400.0" promptText="Enter your name" />
+            <Text fill="#0db572" layoutX="202.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HSTU ALLIANCE" wrappingWidth="230.87841796875">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="200.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an Account" wrappingWidth="374.955078125">
+               <font>
+                  <Font name="Times New Roman Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="200.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="myId" layoutX="200.0" layoutY="211.0" prefHeight="16.0" prefWidth="400.0" promptText="Enter your student Id" />
+            <Text layoutX="200.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student id">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="myPhoneNumber" layoutX="200.0" layoutY="260.0" prefHeight="16.0" prefWidth="400.0" promptText="Your phone number/Email" />
+            <Text layoutX="200.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile number/Email">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="200.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Give a Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="mySubmit" layoutX="330.0" layoutY="450.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: green;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="myPasswordCreat" layoutX="200.0" layoutY="313.0" prefHeight="25.0" prefWidth="400.0" promptText="Enter your password" />
+            <Text layoutX="199.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hall Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="myDistrictNameInput" layoutX="283.0" layoutY="394.0" prefHeight="25.0" prefWidth="200.0" />
+            <Text layoutX="194.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District Name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Label fx:id="createLabel" alignment="CENTER" layoutX="186.0" layoutY="520.0" prefHeight="17.0" prefWidth="349.0" textFill="#ff0505">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hstuism.HstuAllianceController">
+   <children>
+      <Button fx:id="myBatch" layoutX="151.0" layoutY="145.0" mnemonicParsing="false" onAction="#onActionBatch" prefHeight="44.0" prefWidth="149.0" text="MY BATCH">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="393.0" layoutY="145.0" mnemonicParsing="false" onAction="#onActionHall" prefHeight="44.0" prefWidth="149.0" text="MY HALL">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="393.0" layoutY="252.0" mnemonicParsing="false" onAction="#onActionZone" prefHeight="44.0" prefWidth="149.0" text="MY ZONE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="151.0" layoutY="252.0" mnemonicParsing="false" onAction="#onActionFaculty" text="MY FACULTY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="#18bc10" layoutX="238.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HSTU Alliance">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="315.0" layoutY="391.0" mnemonicParsing="false" onAction="#onActionExit" text="Log out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

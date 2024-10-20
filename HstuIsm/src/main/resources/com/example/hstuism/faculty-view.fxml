@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hstuism.HstuAllianceController">
+   <children>
+      <Text fill="#ff5959" layoutX="263.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACULTY">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Text>
+      <Button layoutX="32.0" layoutY="165.0" mnemonicParsing="false" onAction="#cseAction" prefHeight="31.0" prefWidth="205.0" text="CSE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="206.0" mnemonicParsing="false" onAction="#engineeringAction" prefHeight="31.0" prefWidth="205.0" text="ENGINEERING">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="247.0" mnemonicParsing="false" onAction="#fishAction" prefHeight="31.0" prefWidth="205.0" text="FISHERIES">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="288.0" mnemonicParsing="false" onAction="#agAction" prefHeight="31.0" prefWidth="205.0" text="AGRICULTURE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="329.0" mnemonicParsing="false" onAction="#dvmAction" prefHeight="31.0" prefWidth="205.0" text="DVM">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="370.0" mnemonicParsing="false" onAction="#socAction" prefHeight="31.0" prefWidth="205.0" text="SOCIAL SCIENCE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="411.0" mnemonicParsing="false" onAction="#scienceAction" prefHeight="31.0" prefWidth="205.0" text="SCIENCE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="452.0" mnemonicParsing="false" onAction="#bbaAction" prefHeight="31.0" prefWidth="205.0" text="BBA">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="75.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Name:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="374.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionExitFaculty" text="Exit" textFill="#b93e3e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="286.0" layoutY="519.0" mnemonicParsing="false" onAction="#onActionPreviewFaculty" text="Preview" textFill="#b93e3e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableView" layoutX="256.0" layoutY="165.0" prefHeight="323.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="nameField" prefWidth="90.0" text="Name" />
+          <TableColumn fx:id="facultyField" prefWidth="95.0" text="Faculty" />
+            <TableColumn fx:id="batchField" prefWidth="75.0" text="Batch" />
+            <TableColumn fx:id="districtField" prefWidth="85.0" text="District" />
+            <TableColumn fx:id="contactField" prefWidth="160.0" text="Phone/Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
